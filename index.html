@@ -29,6 +29,7 @@
         >
         <!-- Navigation -->
         <nav class="nav">
+
           <ul class="nav-list list">
             <li class="nav-list__item">
               <a class="nav-list__link--current link" href="./index.html"
@@ -45,7 +46,14 @@
             </li>
           </ul>
         </nav>
-        <ul class="communication-list list">
+        <button type="button" class="mobile-menu__button" data-menu-button aria-expended="false">
+          <svg class="mobile-menu__icon">
+          <use class="mobile-menu__open" href="./images/icons.svg#icon-menu">
+          </use>
+          <use class="mobile-menu__close" href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+         <ul class="communication-list list">
           <li class="communication-list__item">
             <a
               href="mailto:info@devstudio"
@@ -72,10 +80,14 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu" data-menu>
+       adsgeagawgwagawgagawg
+
+      </div>
     </header>
     <!--Main content section-->
     <main>
-      <section class="hero">
+       <section class="hero">
         <div class="container">
           <h1 class="hero__title">
             Эффективные решения <br />для вашего бизнеса
@@ -89,7 +101,7 @@
           </button>
         </div>
       </section>
-      <section class="section-advantages">
+       <section class="section-advantages">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="section-list list">
@@ -102,6 +114,7 @@
               <h3 class="advantages__title">
                 Внимание к деталям
               </h3>
+             
               <p class="advantages__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
@@ -128,7 +141,7 @@
                 </svg>
               </div>
               <h3 class="advantages__title">Планирование</h3>
-              <p class="link-text">
+              <p class="advantages__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
@@ -152,10 +165,11 @@
         </div>
       </section>
 
-      <section class="section">
+       <section class="section">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="section-list list">
+            </li>
             <li class="section__item ">
               <div class="doing-overley">
                 <img src="./images/box1.jpg" alt="Работник пишет код" width="370" height="294"/>
@@ -163,7 +177,6 @@
                   <h3 class="doing-overley__title">Десктопные приложения</h3>
                 </div>   
               </div>
-            </li>
 
             <li class="section__item">
               <div class="doing-overley">
@@ -183,7 +196,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
 
       <section class="our-team section">
         <div class="container">
@@ -362,8 +375,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section">
+      </section> -->
+       <section class="section">
         <div class="container">
           <h3 class="section__title">Постоянные клиенты</h3>
           <ul class="client-list list">
@@ -414,7 +427,7 @@
       </section>
     </main>
     <!--footer-->
-    <footer class="footer">
+     <footer class="footer">
       <div class="container footer__section">
         <div class="footer--logo">
           <a href="#" class="link footer-logo__link"
@@ -492,7 +505,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> 
     <!-- modal-btn -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-btn">
@@ -573,5 +586,6 @@
             <button type="submit" class="modal-form__button">Отправить</button>
         </form>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
