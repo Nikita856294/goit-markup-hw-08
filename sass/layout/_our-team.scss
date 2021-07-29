@@ -1,7 +1,12 @@
 /* Our-team */
 .our-team {
   background: var(--our-team-background);
-
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
   &__title {
     font-style: normal;
     font-weight: 500;
@@ -50,6 +55,11 @@
     height: 20px;
   }
 }
-.card-content {
+.our-team__description {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
   margin-top: 9px;
 }

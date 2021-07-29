@@ -1,3 +1,18 @@
+.doing__list {
+  display: flex;
+}
+.doing__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  margin-bottom: 50px;
+}
+.doing__item:not(:last-child) {
+  margin-right: 30px;
+}
 .doing-overley {
   position: relative;
 
