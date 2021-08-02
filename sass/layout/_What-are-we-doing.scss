@@ -1,3 +1,8 @@
+.doing-section {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    display: none;
+  }
+}
 .doing__list {
   display: flex;
 }

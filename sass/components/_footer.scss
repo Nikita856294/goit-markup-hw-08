@@ -7,15 +7,30 @@
 }
 
 .footer {
-  display: flex;
-  align-items: baseline;
   background: var(--primary-background);
   padding-top: 60px;
   padding-bottom: 60px;
-
-  &__section {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+  }
+
+  &__section {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      text-align: center;
+    }
+
+    @media screen and(min-width:768px) and(max-width:1199px) {
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+    @media screen and(min-width:1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   &__icon {
@@ -27,6 +42,7 @@
 .footer-list__icon {
   display: flex;
   margin-top: 20px;
+  justify-content: center;
 }
 .footer-list__icon-link {
   display: flex;
@@ -59,6 +75,9 @@
 .footer-join {
   display: flex;
   flex-direction: column;
+  @media screen and(min-width:480px) and (max-width: 767px) {
+    margin-top: 60px;
+  }
 
   &__text {
     font-weight: bold;
@@ -96,10 +115,20 @@
 }
 /* Footer-form */
 .footer-form {
-  margin-left: 93px;
+  @media screen and(min-width:480px) and(max-width:767px) {
+    margin-top: 60px;
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-top: 60px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-left: 93px;
+  }
 
   &__subscribe {
-    display: flex;
+    @media screen and(min-width:1200px) {
+      display: flex;
+    }
   }
 
   &__text {
@@ -128,6 +157,12 @@
     border-radius: 4px;
     color: #ffffff;
     cursor: pointer;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin: 0 auto;
+    }
   }
   &__icon {
     width: 24px;
@@ -144,6 +179,12 @@
   border-radius: 4px;
   color: var(--secondary-color);
   outline: 0;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
 
   &::placeholder {
     font-size: 16px;

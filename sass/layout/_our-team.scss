@@ -2,10 +2,12 @@
 .our-team {
   background: var(--our-team-background);
   &__list {
-    display: flex;
+    // display: flex;
   }
   &__item:not(:last-child) {
-    margin-right: 30px;
+    // margin-right: 30px;
+    @media screen and (min-width: 480) {
+    }
   }
   &__title {
     font-style: normal;
