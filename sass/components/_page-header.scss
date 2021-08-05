@@ -61,9 +61,15 @@
     }
     &--current::after {
       content: '';
+      @media screen and (min-width: 768px) {
+        bottom: -9px;
+      }
+      @media screen and (min-width: 1200px) {
+        bottom: -4px;
+      }
       position: absolute;
       display: block;
-      bottom: -4px;
+
       left: 0;
       width: 100%;
       height: 4px;
@@ -74,13 +80,20 @@
   }
 }
 .logo {
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--company-text-color);
-  // margin-right: 93px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--company-text-color);
+  }
   @media screen and (min-width: 768px) {
     margin-right: 88px;
   }
@@ -117,12 +130,26 @@
   &__link {
     display: flex;
     align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-    transition: color 250ms var(--timing-function);
+    @media screen and (min-width: 768px) {
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+      color: var(--text-color);
+      transition: color 250ms var(--timing-function);
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--text-color);
+      transition: color 250ms var(--timing-function);
+    }
 
     &:hover,
     &:focus {
