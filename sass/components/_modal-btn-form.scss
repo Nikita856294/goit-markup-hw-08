@@ -3,15 +3,13 @@
   flex-direction: column;
 
   &__title {
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
-      font-family: Roboto;
+    @media screen and (max-width: 1199px) {
       font-weight: bold;
       font-size: 20px;
       line-height: 1.5;
       text-align: center;
       letter-spacing: 0.03em;
       color: var(--title-color);
-      text-align: center;
       margin-bottom: 12px;
     }
     @media screen and (min-width: 1200px) {
@@ -42,7 +40,7 @@
 
     &:hover,
     &:focus {
-      border-color: #2196f3;
+      border-color: var(--accent-color);
     }
     &:hover + .modal-form__icon,
     &:focus + .modal-form__icon {
@@ -108,14 +106,25 @@
     margin-right: 7px;
   }
   &__checkbox {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin-bottom: 30px;
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+      color: #757575;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: #757575;
+      margin-bottom: 30px;
+    }
   }
 
   &__button {

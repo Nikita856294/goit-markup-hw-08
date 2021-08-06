@@ -12,7 +12,7 @@
     }
   }
   &__item:not(:last-child) {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
     @media screen and (min-width: 1200px) {
@@ -76,9 +76,7 @@
   &__icon-list {
     display: flex;
     margin-top: 16px;
-    @media screen and (min-width: 480px) {
-      justify-content: center;
-    }
+    justify-content: center;
     @media screen and (min-width: 1200px) {
       display: flex;
       margin-top: 16px;

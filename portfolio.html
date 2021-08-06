@@ -23,17 +23,16 @@
     <!-- HEADER -->
     <header class="header">
       <div class="container header__container">
-        <a href="" class="logo  link"
-          ><span class="logo__span">Web</span>Studio</a>
+        <a href="" class="logo link"
+          ><span class="logo__span">Web</span>Studio</a
+        >
         <nav class="nav">
           <ul class="nav-list list">
             <li class="nav-list__item">
-              <a class="nav-list__link--current link" href="./index.html"
-                >Cтудия</a
-              >
+              <a class="nav-list__link link" href="./index.html">Cтудия</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link link" href="./portfolio.html"
+              <a class="nav-list__link--current link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -42,18 +41,31 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu__button" data-menu-button aria-expanded="false">
+        <button
+          type="button"
+          class="mobile-menu__button"
+          data-menu-button
+          aria-expanded="false"
+        >
           <svg class="mobile-menu__icon">
-          <use class="mobile-menu__open" href="./images/icons.svg#icon-menu">
-          </use>
-          <use class="mobile-menu__close" href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
+            <use
+              class="mobile-menu__open"
+              href="./images/icons.svg#icon-menu"
+            ></use>
+            <use
+              class="mobile-menu__close"
+              href="./images/icons.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
         <ul class="communication-list list">
           <li class="communication-list__item">
             <a
               href="mailto:info@devstudio"
-              class="communication-list__link  communication-list__icon-link link"
+              class="
+                communication-list__link communication-list__icon-link
+                link
+              "
             >
               <svg class="communication-list__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -66,9 +78,12 @@
           <li class="communication-list__item">
             <a
               href="tel:+380961111111"
-              class="communication-list__link  communication-list__icon-link link"
+              class="
+                communication-list__link communication-list__icon-link
+                link
+              "
             >
-              <svg class="communication-list__icon " width="10px" height="16px">
+              <svg class="communication-list__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -77,22 +92,69 @@
         </ul>
       </div>
       <div class="mobile-menu" data-menu>
-        <ul class="mobile__nav-list list">
-          <li class="mobile__nav-item "><a href="./index.html" class="mobile__nav-link  link">Студия</a></li>
-          <li class="mobile__nav-item "><a href="./portfolio.html" class="mobile__nav-link mobile__nav-link--current link">Портфолио</a></li>
-          <li class="mobile__nav-item "><a href="#" class="mobile__nav-link link">Контакты</a></li>
-        </ul>
-        <ul class="mobile__communication-list list">
-          <li class="mobile__communication-item "><a href="tel:+380961111111" class="mobile__communication-tel link">+38 096 111 11 11</a></li>
-          <li class="mobile__communication-item "><a href="mailto:info@devstudio" class="mobile__communication-email link">info@devstudio</a></li>
-        </ul>
-        <ul class="mobile__social-list list">
-          <li class="mobile__social-item "><a href="#" class="mobile__social-link link">Instagram</a></li>
-          <li class="mobile__social-item"><a href="#" class="mobile__social-link link">Twitter</a></li>
-          <li class="mobile__social-item"><a href="#" class="mobile__social-link link">Facebook</a></li>
-          <li class="mobile__social-item"><a href="#" class="mobile__social-link link">Linkedin</a></li>
-        </ul>
-
+        <div class="mobile-menu__content">
+          <div>
+            <ul class="mobile__nav-list list">
+              <li class="mobile__nav-item">
+                <a href="./index.html" class="mobile__nav-link link">Студия</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a
+                  href="./portfolio.html"
+                  class="mobile__nav-link mobile__nav-link--current link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile__nav-item">
+                <a href="#" class="mobile__nav-link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mobile__communication-list list">
+              <li class="mobile__communication-item">
+                <a
+                  href="tel:+380961111111"
+                  class="mobile__communication-tel link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile__communication-item">
+                <a
+                  href="mailto:info@devstudio"
+                  class="mobile__communication-email link"
+                  >info@devstudio</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile__social-list list">
+              <li class="mobile__social-item">
+                <a
+                  href="#"
+                  class="mobile__social-link mobile__social-link--after link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile__social-item">
+                <a
+                  href="#"
+                  class="mobile__social-link mobile__social-link--after link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile__social-item">
+                <a
+                  href="#"
+                  class="mobile__social-link mobile__social-link--after link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile__social-item">
+                <a href="#" class="mobile__social-link link">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Main content section -->
@@ -106,35 +168,79 @@
               </button>
             </li>
             <li class="portfolio-list__item">
-              <button type="button" class="portfolio-list__button">Веб-сайты</button>
+              <button type="button" class="portfolio-list__button">
+                Веб-сайты
+              </button>
             </li>
             <li class="portfolio-list__item">
-              <button type="button" class="portfolio-list__button"">Приложения</button>
+              <button type="button" class="portfolio-list__button">
+                Приложения
+              </button>
             </li>
             <li class="portfolio-list__item">
-              <button type="button" class="portfolio-list__button"">Дизайн</button>
+              <button type="button" class="portfolio-list__button">
+                Дизайн
+              </button>
             </li>
             <li class="portfolio-list__item">
-              <button type="button" class="portfolio-list__button"">Маркетинг</button>
+              <button type="button" class="portfolio-list__button">
+                Маркетинг
+              </button>
             </li>
           </ul>
-          <ul class="portfolio list ">
+          <ul class="portfolio list">
             <li class="portfolio__item">
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__img">
                   <picture>
-                    <source srcset="./images/deckstope/portfolio/img.jpg 1x, ./images/deckstope/portfolio/img@2x.jpg 2x" media="(min-width:1200px)"/>
-                    <source srcset="./images/deckstope/portfolio/img.webp 1x, ./images/deckstope/portfolio/img@2x.webp 2x" media="(min-width:1200px)"/>
-                    <source srcset=" ./images/tablet/portfolio/img.jpg 1x, ./images/tablet/portfolio/img@2x.jpg 2x" media="(min-width:768px)"/>
-                    <source srcset=" ./images/tablet/portfolio/img.webp1x, ./images/tablet/portfolio/img@2x.webp 2x" media="(min-width:768px)"/>
-                    <source srcset=" ./images/mobile/portfolio/img.jpg1x, ./images/mobile/portfolio/img@2x.jpg 2x" media="(min-width:480px)"/>
-                    <source srcset=" ./images/mobile/portfolio/img.webp 1x, ./images/mobile/portfolio/img@2x.webp 2x" media="(min-width:480px)"/>
-                  <img
-                    src="#"
-                    width="370"
-                    height="294"
-                    alt="Ноутбук с открытыми фотографиями людей"
-                  />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img.jpg    1x,
+                        ./images/deckstope/portfolio/img@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img.webp    1x,
+                        ./images/deckstope/portfolio/img@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img.jpg    1x,
+                        ./images/tablet/portfolio/img@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img.webp1x,
+                        ./images/tablet/portfolio/img@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img.jpg1x,
+                        ./images/mobile/portfolio/img@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img.webp    1x,
+                        ./images/mobile/portfolio/img@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="#"
+                      width="370"
+                      height="294"
+                      alt="Ноутбук с открытыми фотографиями людей"
+                    />
                   </picture>
                   <p class="portfolio__overlay">
                     Технокряк это современная площадка распространения
@@ -152,19 +258,55 @@
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__img">
                   <picture>
-                    <source srcset="./images/deckstope/portfolio/img-1.jpg 1x, ./images/deckstope/portfolio/img-1@2x.jpg 2x" media="(min-width:1200px)">
-                    <source srcset="./images/deckstope/portfolio/img-1.webp 1x, ./images/deckstope/portfolio/img-1@2x.webp 2x" media="(min-width:1200px)">
-                    <source srcset="./images/tablet/portfolio/img-1.jpg 1x, ./images/tablet/portfolio/img-1@2x.jpg 2x" media="(min-width:768px)">
-                    <source srcset="./images/tablet/portfolio/img-1.webp 1x, ./images/tablet/portfolio/img-1@2x.webp 2x" media="(min-width:768px)">
-                    <source srcset="./images/mobile/portfolio/img-1.jpg 1x, ./images/mobile/portfolio/img-1@2x.jpg 2x" media="(min-width:480px)">
-                    <source srcset="./images/mobile/portfolio/img-1.webp 1x, ./images/mobile/portfolio/img-1@2x.webp 2x" media="(min-width:480px)">
-                  <img
-                    src="./images/img2.jpg"
-                    width="370"
-                    height="294"
-                    alt="Игра в баскетбол"
-                  />
-                </picture>
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-1.jpg    1x,
+                        ./images/deckstope/portfolio/img-1@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-1.webp    1x,
+                        ./images/deckstope/portfolio/img-1@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-1.jpg    1x,
+                        ./images/tablet/portfolio/img-1@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-1.webp    1x,
+                        ./images/tablet/portfolio/img-1@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-1.jpg    1x,
+                        ./images/mobile/portfolio/img-1@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-1.webp    1x,
+                        ./images/mobile/portfolio/img-1@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img2.jpg"
+                      width="370"
+                      height="294"
+                      alt="Игра в баскетбол"
+                    />
+                  </picture>
                   <p class="portfolio__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -183,20 +325,56 @@
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__img">
                   <picture>
-                    <source srcset="./images/deckstope/portfolio/img-2.jpg 1x, ./images/deckstope/portfolio/img-2@2x.jpg 2x" media="(min-width:1200px)">
-                    <source srcset="./images/deckstope/portfolio/img-2.webp 1x, ./images/deckstope/portfolio/img-2@2x.webp 2x" media="(min-width:1200px)">
-                    <source srcset="./images/tablet/portfolio/img-2.jpg 1x, ./images/deckstope/portfolio/img-2@2x.jpg 2x" media="(min-width:768px)">
-                    <source srcset="./images/tablet/portfolio/img-2.webp 1x, ./images/deckstope/portfolio/img-2@2x.webp 2x" media="(min-width:768px)">
-                    <source srcset="./images/mobile/portfolio/img-2.jpg 1x, ./images/deckstope/portfolio/img-2@2x.jpg 2x" media="(min-width:480px)">
-                    <source srcset="./images/mobile/portfolio/img-2.webp 1x, ./images/deckstope/portfolio/img-2@2x.webp 2x" media="(min-width:480px)">
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-2.jpg    1x,
+                        ./images/deckstope/portfolio/img-2@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-2.webp    1x,
+                        ./images/deckstope/portfolio/img-2@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-2.jpg       1x,
+                        ./images/deckstope/portfolio/img-2@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-2.webp       1x,
+                        ./images/deckstope/portfolio/img-2@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-2.jpg       1x,
+                        ./images/deckstope/portfolio/img-2@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-2.webp       1x,
+                        ./images/deckstope/portfolio/img-2@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                    />
                     <img
-                    src="./images/img3.jpg"
-                    width="370"
-                    height="294"
-                    alt="Логотип ресторана"
-                  />
+                      src="./images/img3.jpg"
+                      width="370"
+                      height="294"
+                      alt="Логотип ресторана"
+                    />
                   </picture>
-                 
+
                   <p class="portfolio__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -214,18 +392,54 @@
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__img">
                   <picture>
-                    <source srcset="./images/deckstope/portfolio/img-3.jpg 1x, ./images/deckstope/portfolio/img-3@2x.jpg 2x" media="(min-width:1200px)">
-                    <source srcset="./images/deckstope/portfolio/img-3.webp 1x, ./images/deckstope/portfolio/img-3@2x.webp 2x" media="(min-width:1200px)">
-                    <source srcset="./images/tablet/portfolio/img-3.jpg 1x, ./images/tablet/portfolio/img-3@2x.jpg 2x" media="(min-width:768px)">
-                    <source srcset="./images/tablet/portfolio/img-3.webp 1x, ./images/tablet/portfolio/img-3@2x.webp 2x" media="(min-width:768px)">
-                    <source srcset="./images/mobile/portfolio/img-3.jpg 1x, ./images/mobile/portfolio/img-3@2x.jpg 2x" media="(min-width:480px)">
-                    <source srcset="./images/mobile/portfolio/img-3.webp 1x, ./images/mobile/portfolio/img-3@2x.webp 2x" media="(min-width:480px)">
-                  <img
-                    src="./images/img4.jpg"
-                    width="370"
-                    height="294"
-                    alt="Наушники"
-                  />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-3.jpg    1x,
+                        ./images/deckstope/portfolio/img-3@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-3.webp    1x,
+                        ./images/deckstope/portfolio/img-3@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-3.jpg    1x,
+                        ./images/tablet/portfolio/img-3@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-3.webp    1x,
+                        ./images/tablet/portfolio/img-3@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-3.jpg    1x,
+                        ./images/mobile/portfolio/img-3@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-3.webp    1x,
+                        ./images/mobile/portfolio/img-3@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img4.jpg"
+                      width="370"
+                      height="294"
+                      alt="Наушники"
+                    />
                   </picture>
                   <p class="portfolio__overlay">
                     Технокряк это современная площадка распространения
@@ -243,20 +457,56 @@
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__img">
                   <picture>
-                    <source srcset="./images/deckstope/portfolio/img-4.jpg 1x, ./images/deckstope/portfolio/img-3@2x.jpg 2x" media="(min-width:1200px)">
-                    <source srcset="./images/deckstope/portfolio/img-4.webp 1x, ./images/deckstope/portfolio/img-4@2x.webp 2x" media="(min-width:1200px)">
-                    <source srcset="./images/tablet/portfolio/img-4.jpg 1x, ./images/tablet/portfolio/img-4@2x.jpg 2x" media="(min-width:768px)">
-                    <source srcset="./images/tablet/portfolio/img-4.webp 1x, ./images/tablet/portfolio/img-4@2x.webp 2x" media="(min-width:768px)">
-                    <source srcset="./images/mobile/portfolio/img-4.jpg 1x, ./images/mobile/portfolio/img-4@2x.jpg 2x" media="(min-width:480px)">
-                    <source srcset="./images/mobile/portfolio/img-4.webp 1x, ./images/mobile/portfolio/img-4@2x.webp 2x" media="(min-width:480px)">
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-4.jpg    1x,
+                        ./images/deckstope/portfolio/img-3@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-4.webp    1x,
+                        ./images/deckstope/portfolio/img-4@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-4.jpg    1x,
+                        ./images/tablet/portfolio/img-4@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-4.webp    1x,
+                        ./images/tablet/portfolio/img-4@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-4.jpg    1x,
+                        ./images/mobile/portfolio/img-4@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-4.webp    1x,
+                        ./images/mobile/portfolio/img-4@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                    />
                     <img
-                    src="./images/img5.jpg"
-                    width="370"
-                    height="294"
-                    alt="Коробки с содержимым"
-                  />
+                      src="./images/img5.jpg"
+                      width="370"
+                      height="294"
+                      alt="Коробки с содержимым"
+                    />
                   </picture>
-                  
+
                   <p class="portfolio__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -273,18 +523,54 @@
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__img">
                   <picture>
-                    <source srcset="./images/deckstope/portfolio/img-5.jpg 1x, ./images/deckstope/portfolio/img-5@2x.jpg 2x" media="(min-width:1200px)">
-                    <source srcset="./images/deckstope/portfolio/img-5.webp 1x, ./images/deckstope/portfolio/img-5@2x.webp 2x" media="(min-width:1200px)">
-                    <source srcset="./images/tablet/portfolio/img-5.jpg 1x, ./images/tablet/portfolio/img-5@2x.jpg 2x" media="(min-width:768px)">
-                    <source srcset="./images/tablet/portfolio/img-5.webp 1x, ./images/tablet/portfolio/img-5@2x.webp 2x" media="(min-width:768px)">
-                    <source srcset="./images/mobile/portfolio/img-5.jpg 1x, ./images/mobile/portfolio/img-5@2x.jpg 2x" media="(min-width:480px)">
-                    <source srcset="./images/mobile/portfolio/img-5.webp 1x, ./images/mobile/portfolio/img-5@2x.webp 2x" media="(min-width:480px)">
-                  <img
-                    src="./images/img6.jpg"
-                    width="370"
-                    height="294"
-                    alt="Открытый сайт"
-                  />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-5.jpg    1x,
+                        ./images/deckstope/portfolio/img-5@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-5.webp    1x,
+                        ./images/deckstope/portfolio/img-5@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-5.jpg    1x,
+                        ./images/tablet/portfolio/img-5@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-5.webp    1x,
+                        ./images/tablet/portfolio/img-5@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-5.jpg    1x,
+                        ./images/mobile/portfolio/img-5@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-5.webp    1x,
+                        ./images/mobile/portfolio/img-5@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img6.jpg"
+                      width="370"
+                      height="294"
+                      alt="Открытый сайт"
+                    />
                   </picture>
                   <p class="portfolio__overlay">
                     Технокряк это современная площадка распространения
@@ -301,21 +587,57 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__img">
-                 <picture>
-                  <source srcset="./images/deckstope/portfolio/img-6.jpg 1x, ./images/deckstope/portfolio/img-6@2x.jpg 2x" media="(min-width:1200px)">
-                  <source srcset="./images/deckstope/portfolio/img-6.webp 1x, ./images/deckstope/portfolio/img-6@2x.webp 2x" media="(min-width:1200px)">
-                  <source srcset="./images/tablet/portfolio/img-6.jpg 1x, ./images/tablet/portfolio/img-6@2x.jpg 2x" media="(min-width:768px)">
-                  <source srcset="./images/tablet/portfolio/img-6.webp 1x, ./images/tablet/portfolio/img-6@2x.webp 2x" media="(min-width:768px)">
-                  <source srcset="./images/mobile/portfolio/img-6.jpg 1x, ./images/mobile/portfolio/img-6@2x.jpg 2x" media="(min-width:480px)">
-                  <source srcset="./images/mobile/portfolio/img-6.webp 1x, ./images/mobile/portfolio/img-6@2x.webp 2x" media="(min-width:480px)">
-                  <img
-                  src="./images/img7.jpg"
-                  width="370"
-                  height="294"
-                  alt="Открытый  журнал"
-                />
-                 </picture>
-                  
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-6.jpg    1x,
+                        ./images/deckstope/portfolio/img-6@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-6.webp    1x,
+                        ./images/deckstope/portfolio/img-6@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-6.jpg    1x,
+                        ./images/tablet/portfolio/img-6@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-6.webp    1x,
+                        ./images/tablet/portfolio/img-6@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-6.jpg    1x,
+                        ./images/mobile/portfolio/img-6@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-6.webp    1x,
+                        ./images/mobile/portfolio/img-6@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img7.jpg"
+                      width="370"
+                      height="294"
+                      alt="Открытый  журнал"
+                    />
+                  </picture>
+
                   <p class="portfolio__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -332,19 +654,55 @@
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__img">
                   <picture>
-                    <source srcset="./images/deckstope/portfolio/img-7.jpg 1x, ./images/deckstope/portfolio/img-7@2x.jpg 2x" media="(min-width:1200px)">
-                    <source srcset="./images/deckstope/portfolio/img-7.webp 1x, ./images/deckstope/portfolio/img-7@2x.webp 2x" media="(min-width:1200px)">
-                    <source srcset="./images/tablet/portfolio/img-7.jpg 1x, ./images/tablet/portfolio/img-7@2x.jpg 2x" media="(min-width:768px)">
-                    <source srcset="./images/tablet/portfolio/img-7.webp 1x, ./images/tablet/portfolio/img-7@2x.webp 2x" media="(min-width:768px)">
-                    <source srcset="./images/mobile/portfolio/img-7.jpg 1x, ./images/mobile/portfolio/img-7@2x.jpg 2x" media="(min-width:480px)">
-                    <source srcset="./images/mobile/portfolio/img-7.webp 1x, ./images/mobile/portfolio/img-7@2x.webp 2x" media="(min-width:480px)">
-                  <img
-                    src="./images/img8.jpg"
-                    width="370"
-                    height="294"
-                    alt="Бирка с надписью магазина"
-                  />
-                </picture>
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-7.jpg    1x,
+                        ./images/deckstope/portfolio/img-7@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-7.webp    1x,
+                        ./images/deckstope/portfolio/img-7@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-7.jpg    1x,
+                        ./images/tablet/portfolio/img-7@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-7.webp    1x,
+                        ./images/tablet/portfolio/img-7@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-7.jpg    1x,
+                        ./images/mobile/portfolio/img-7@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-7.webp    1x,
+                        ./images/mobile/portfolio/img-7@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img8.jpg"
+                      width="370"
+                      height="294"
+                      alt="Бирка с надписью магазина"
+                    />
+                  </picture>
                   <p class="portfolio__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -361,20 +719,56 @@
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__img">
                   <picture>
-                    <source srcset="./images/deckstope/portfolio/img-8.jpg 1x, ./images/deckstope/portfolio/img-8@2x.jpg 2x" media="(min-width:1200px)">
-                    <source srcset="./images/deckstope/portfolio/img-8.webp 1x, ./images/deckstope/portfolio/img-8@2x.webp 2x" media="(min-width:1200px)">
-                    <source srcset="./images/tablet/portfolio/img-8.jpg 1x, ./images/tablet/portfolio/img-8@2x.jpg 2x" media="(min-width:768px)">
-                    <source srcset="./images/tablet/portfolio/img-8.webp 1x, ./images/tablet/portfolio/img-8@2x.webp 2x" media="(min-width:768px)">
-                    <source srcset="./images/mobile/portfolio/img-8.jpg 1x, ./images/mobile/portfolio/img-8@2x.jpg 2x" media="(min-width:480px)">
-                    <source srcset="./images/mobile/portfolio/img-8.webp 1x, ./images/mobile/portfolio/img-8@2x.webp 2x" media="(min-width:480px)">
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-8.jpg    1x,
+                        ./images/deckstope/portfolio/img-8@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/deckstope/portfolio/img-8.webp    1x,
+                        ./images/deckstope/portfolio/img-8@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-8.jpg    1x,
+                        ./images/tablet/portfolio/img-8@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/img-8.webp    1x,
+                        ./images/tablet/portfolio/img-8@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-8.jpg    1x,
+                        ./images/mobile/portfolio/img-8@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/img-8.webp    1x,
+                        ./images/mobile/portfolio/img-8@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                    />
                     <img
-                    src="./images/img9.jpg"
-                    width="370"
-                    height="294"
-                    alt="Открытое приложение"
-                  />
+                      src="./images/img9.jpg"
+                      width="370"
+                      height="294"
+                      alt="Открытое приложение"
+                    />
                   </picture>
-                  
+
                   <p class="portfolio__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -400,7 +794,7 @@
             ><span class="logo__span">Web</span
             ><span class="footer-logo__span">Studio</span></a
           >
-  
+
           <address class="address footer-content">
             г. Киев, пр-т Леси Украинки, 26
           </address>
@@ -411,7 +805,7 @@
               >
             </li>
             <li class="footer-list__item list">
-              <a href="tel:+380991111111" class="footer-list__link  link"
+              <a href="tel:+380991111111" class="footer-list__link link"
                 >+38 099 111 11 11</a
               >
             </li>
@@ -421,28 +815,28 @@
           <p class="footer-join__text">Присоединяйтесь</p>
           <ul class="footer-list__icon list">
             <li>
-              <a href="#" class="footer-list__icon-link "
+              <a href="#" class="footer-list__icon-link"
                 ><svg class="footer__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-list__icon-link ">
+              <a href="#" class="footer-list__icon-link">
                 <svg class="footer__icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-list__icon-link ">
+              <a href="#" class="footer-list__icon-link">
                 <svg class="footer__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-list__icon-link "
+              <a href="#" class="footer-list__icon-link"
                 ><svg class="footer__icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>

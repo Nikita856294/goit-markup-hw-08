@@ -6,7 +6,11 @@
 }
 .client-list {
   // display: flex;
-  @media screen and (min-width: 480px) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
+  @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -16,7 +20,7 @@
   &__item:not(:last-child) {
   }
   &__item {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
       flex-basis: calc((100% - 60px) / 2);
       margin: 15px;
     }
