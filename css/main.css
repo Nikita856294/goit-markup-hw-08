@@ -459,53 +459,51 @@ body {
 .hero {
   background-color: var(--primary-background);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1600px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/bg-main.jpg");
-  }
-}
-
-@media (max-width: 767px), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: url("../images/mobile/bg-main@2x.jpg");
-  }
-}
-
-@media (min-width: 768px), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: url("../images/decksto/bg-main@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/bg-main.jpg");
   }
 }
 
-@media (min-width: 768px), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: url("../images/tablet/bg-main@2x.jpg");
+@media not all, screen and (min-resolution: 192dpi) and (max-width: 768px), screen and (min-resolution: 2dppx) and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/bg-main@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/deckstope/bg-main.jpg");
+  }
+}
+
+@media not all, screen and (min-resolution: 192dpi) and (min-width: 769px), screen and (min-resolution: 2dppx) and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/deckstope/bg-main@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/deckstope/bg-main.jpg");
   }
 }
 
-@media (min-width: 1200px), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: url("../images/deckstope/bg-main@2x.jpg");
+@media not all, screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/deckstope/bg-main@2x.jpg");
   }
 }
 
@@ -625,7 +623,7 @@ body {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .advantages__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -768,12 +766,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .our-team__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .our-team__item {
     flex-basis: calc((100% - 60px) / 2);
@@ -783,7 +775,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .our-team__item {
-    flex-basis: calc((100% - 200px) / 4);
+    flex-basis: calc((100% - 120px) / 4);
     margin: 15px;
   }
 }
@@ -1070,7 +1062,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  margin-right: 70px;
 }
 
 .footer-list {
@@ -1211,11 +1202,8 @@ body {
 }
 
 .portfolio-list__item:not(:last-child) {
+  margin-right: 8px;
   margin-bottom: 15px;
-}
-
-.portfolio-list__item {
-  margin: 4px;
 }
 
 .portfolio-list__button {
@@ -1262,14 +1250,12 @@ body {
   .portfolio {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
+    margin: -15px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .portfolio > .portfolio__item {
-    margin-top: 40px;
     margin-bottom: 34px;
   }
 }
@@ -1283,9 +1269,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .portfolio > .portfolio__item {
-    flex-basis: calc(100% / 3- 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+    flex-basis: calc((100% - 120px) / 3);
+    margin: 15px;
   }
 }
 

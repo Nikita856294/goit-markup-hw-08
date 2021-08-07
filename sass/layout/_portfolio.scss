@@ -15,11 +15,9 @@
     justify-content: center;
   }
   &__item:not(:last-child) {
+    margin-right: 8px;
     margin-bottom: 15px;
     // margin-right: 8px;
-  }
-  &__item {
-    margin: 4px;
   }
   &__button {
     font-family: inherit;
@@ -63,13 +61,11 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
+    margin: -15px;
   }
 
   & > .portfolio__item {
     @media screen and (max-width: 767px) {
-      margin-top: 40px;
       margin-bottom: 34px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -77,9 +73,8 @@
       margin: 15px;
     }
     @media screen and(min-width:1200px) {
-      flex-basis: calc(100% / 3- 30px);
-      margin-left: 30px;
-      margin-top: 30px;
+      flex-basis: calc((100% - 120px) / 3);
+      margin: 15px;
     }
   }
   &__card-link {
