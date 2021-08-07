@@ -75,7 +75,9 @@
   }
 }
 .footer-logo {
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 
   &__span {
     color: var(--secondary-color);
