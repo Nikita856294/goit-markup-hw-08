@@ -2,22 +2,31 @@
   // display: flex;
   // justify-content: center;
   // margin-bottom: 34px;
-  margin-bottom: 15px;
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    margin-bottom: 14px;
   }
   @media screen and (min-width: 1200px) {
     justify-content: center;
+    margin-bottom: 50px;
   }
   &__item:not(:last-child) {
     margin-right: 8px;
-    // margin-right: 8px;
   }
+  &__item-telephone {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  // margin-right: 8px;
+
   &__button {
     font-family: inherit;
     background: var(--background-portfolio-button);
@@ -64,6 +73,8 @@
   }
 
   & > .portfolio__item {
+    display: flex;
+    flex-direction: column;
     @media screen and (max-width: 767px) {
       margin-bottom: 34px;
     }
@@ -77,6 +88,9 @@
     }
   }
   &__card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     position: relative;
     display: block;
     cursor: pointer;
@@ -89,9 +103,14 @@
     }
   }
   &__card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
     padding: 20px 24px;
-    border: 1px solid #eeeeee;
-    border-top: 0;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
   }
 
   &__title {
